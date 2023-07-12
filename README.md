@@ -5,4 +5,4 @@ Scripts Python pour récupérer :
 
 Via le site 'https://www.japscan.lol/mangas/'
 
-Update : Le manga 'rengokuno-ashe' et certains mangas dont la date publication est assez vieille présentent des formats de chapitres / manga scannés ou des noms de chapitres en decimal. Pour ces raisons , les mangas terminés avant 2021 seront supprimés.
+Update : Le manga 'rengokuno-ashe' et certains mangas dont la date de publication est assez vieille présentent des formats de chapitres / manga scannés ou des noms de chapitres en decimal. Pour ces raisons , les mangas terminés avant 2021 seront supprimés.
