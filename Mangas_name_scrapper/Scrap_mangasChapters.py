@@ -1,10 +1,15 @@
+# Importation des bibliothèques
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import pandas as pd
 import re
 import yaml
 
-# Trouver le nombre de chapitres d'un manga ( définir une fonction qui affichera le nombre de chapitres d'un manga)
+#=============== Updates du code à faire ==================================
+# Dans genre si on trouve 'Webtoon' on supprime
+# ajouter des mangas au choix manuellement ( Nanatsu no taizai fini en 2020 )
+#===========================================================================
+
 
 # ----- Configuration de Selenium pour utiliser Chrome -----
 # Chemin vers le profil Chrome
