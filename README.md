@@ -1,4 +1,7 @@
-# Manga_Scrapper
+# Mangas_Scrapper V1
+
+Référence : **Mangas_name_scrapper**
+
 Scripts Python pour récupérer :
 - Tous les noms de mangas disponibles
 - Les chapitres ou volumes disponibles ( par mangas )
@@ -12,3 +15,15 @@ Update 1 : Les mangas non mis à jour ou terminés avant et en 2020 ont été su
 - le fichier 'mangas_chapters.yml' comporte les différents mangas et leurs chapitres respectifs jugés 'à jour' ou 'exploitables'.
 
 <img width="427" alt="Capture d’écran 2023-07-12 à 21 54 24" src="https://github.com/CAprogs/Manga_list_Scrapping/assets/104645407/2b701ade-62b4-4d01-bac2-6ceb00bef5c2">
+
+# Mangas_Scrapper V2
+
+Référence : **Mangas_name_scrapper 2**
+
+Scripts Python pour récupérer :
+- Tous les noms de mangas disponibles
+- Les chapitres disponibles ( par mangas )
+
+Via le site 'https://scantrad-vf.co/'
+
+Update 0 : Le site contient toute sorte d'oeuvres y compris des webtoons. Certains mangas ne sont pas encore apparus raison pour laquelle ils sont vides dans le dossier .yml
