@@ -5,18 +5,12 @@ import pandas as pd
 import re
 import yaml
 
-#=============== Updates du code à faire ==================================
-# Dans genre si on trouve 'Webtoon' on supprime
-# ajouter des mangas au choix manuellement ( Nanatsu no taizai fini en 2020 )
-#===========================================================================
-
-
 # ----- Configuration de Selenium pour utiliser Chrome -----
 # Chemin vers le profil Chrome
 chrome_profile_path = '/Users/charles-albert/Library/Application Support/Google/Chrome/Default'
 options = webdriver.ChromeOptions()
 options.add_argument('--user-data-dir=' + chrome_profile_path)
-driver = webdriver.Chrome(options=options,executable_path='/Users/charles-albert/Desktop/chromedriver_mac_arm64/chromedriver') # Chemin vers l'exécutable chromedriver
+driver = webdriver.Chrome(options=options)
 driver.maximize_window() # Ouvrir le navigateur en full size
 # -----------------------------------------------------------
 
