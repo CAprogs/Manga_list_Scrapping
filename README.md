@@ -41,3 +41,15 @@ Scripts Python pour récupérer :
 Via le site 'https://lelscans.net/'
 
 Update 0 : Le site est propre mais ne contient que très peu de mangas ( 33 )
+
+# Mangas_Scrapper V4
+
+Référence : **Mangas_name_scrapper 4**
+
+Scripts Python pour récupérer :
+- Tous les noms de mangas disponibles
+- Les chapitres disponibles ( par mangas )
+
+Via le site 'https://fmteam.fr/'
+
+Update 0 : Le site est propre mais ne contient qu'une dizaine de mangas
