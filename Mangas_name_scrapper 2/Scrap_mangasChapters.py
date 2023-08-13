@@ -35,7 +35,7 @@ for manga_name in datas['name']:
         while True:
             try:
                 balise = str(f'//*[@id="manga-chapters-holder"]/div[2]/div/ul/li/ul/li/ul/li[{i}]/a')  # Récupérer l'élément qui contient le dernier chapitre 
-                element = driver.find_element(By.XPATH, balise) # Chemin vers la balise contenant le chapitre {i}
+                element = driver.find_element('By.XPATH', balise) # Chemin vers la balise contenant le chapitre {i}
                 valeur_href = element.get_attribute('href') # Récupérer la valeur de l'attribut "href" de l'élément <a>
                 # Utiliser une expression régulière pour extraire la valeur
                 result = re.search(rf'/{manga_name}/([^/]+)/', valeur_href)  # On récupère le chapitre
