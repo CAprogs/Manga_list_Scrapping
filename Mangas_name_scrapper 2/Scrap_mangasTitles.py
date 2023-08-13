@@ -36,7 +36,7 @@ while True:
         for row in range(1,7):
             for column in range(1,3):
                 balise = str(f'/html/body/div[1]/div/div[1]/div[2]/div/div/div/div[1]/div[1]/div/div[2]/div[2]/div/div/div[{row}]/div/div[{column}]/div/div[2]/div[1]/h3/a')
-                element = driver.find_element(By.XPATH, balise) # chemin vers la balise du nom du 1er manga
+                element = driver.find_element('By.XPATH', balise) # chemin vers la balise du nom du 1er manga
                 # Récupérer la valeur de l'attribut "href" de l'élément <a>
                 valeur_href = element.get_attribute('href')
                 # Utiliser une expression régulière pour extraire la valeur
