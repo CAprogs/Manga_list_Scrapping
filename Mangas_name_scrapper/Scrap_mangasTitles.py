@@ -28,7 +28,7 @@ while starting_page <= 270:
     for i in range(1,31):
         balise = str(f'//*[@id="main"]/div/div[3]/div[{i}]/a')
         try:
-            element = driver.find_element(By.XPATH, balise) # chemin vers la balise du nom du 1er manga
+            element = driver.find_element('By.XPATH', balise) # chemin vers la balise du nom du 1er manga
             # Récupérer la valeur de l'attribut "href" de l'élément <a>
             valeur_href = element.get_attribute('href')
             # Utiliser une expression régulière pour extraire la valeur
