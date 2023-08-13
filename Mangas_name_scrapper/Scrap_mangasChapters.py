@@ -41,11 +41,11 @@ for manga_name in datas['name']:
     try:
         # Suppression des mangas présentant des défauts
         try:
-            element_0 = driver.find_element(By.XPATH,balise_0).text # valeur qui indique si c'est un webtoon
+            element_0 = driver.find_element('By.XPATH',balise_0).text # valeur qui indique si c'est un webtoon
         except:
-            element_0 = driver.find_element(By.XPATH,balise_00).text # valeur qui indique si c'est un webtoon ( option 2 )
+            element_0 = driver.find_element('By.XPATH',balise_00).text # valeur qui indique si c'est un webtoon ( option 2 )
 
-        element_000 = driver.find_element(By.XPATH,balise_000).text # valeur qui indique la date de dernière publication d'un chapitre/volume du manga
+        element_000 = driver.find_element('By.XPATH',balise_000).text # valeur qui indique la date de dernière publication d'un chapitre/volume du manga
         last_update = int(re.search(r'\d{4}', element_000).group(0)) # on récupère le nombre correspondant à l'année de dernière publication
         
         if element_0.lower() == 'webtoon' or last_update <= 2020: # Si le manga est un webtoon ou sa dernière update remonte à 2020 ou moins => suppression
@@ -60,11 +60,11 @@ for manga_name in datas['name']:
             while True:
                 try:
                     balise_1 = str(f'//*[@id="collapse-{i_2}"]/div[{i}]/a')  # Récupérer l'élément qui contient le dernier chapitre / volume ( format string )
-                    element_1 = driver.find_element(By.XPATH,balise_1) # Chemin vers la balise contenant le chapitre {i} ou le volume {i} disponible
+                    element_1 = driver.find_element('By.XPATH',balise_1) # Chemin vers la balise contenant le chapitre {i} ou le volume {i} disponible
                     while True:
                         try:
                             balise_1 = str(f'//*[@id="collapse-{i_2}"]/div[{i}]/a')
-                            element_1 = driver.find_element(By.XPATH,balise_1) 
+                            element_1 = driver.find_element('By.XPATH',balise_1) 
                             valeur_href_1 = element_1.get_attribute('href') # Récupérer la valeur de l'attribut "href" de l'élément <a>
                             # Utiliser une expression régulière pour extraire la valeur
                             result_1 = re.search(r'/([^/]+)/$', valeur_href_1)  # On récupère uniquement le nom du manga
